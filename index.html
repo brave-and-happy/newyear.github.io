@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+    <title>小石日志</title>
+   
+  </head>
+  <body>
+    <style type="text/css">
+      #colorchange {
+        width: 100%;
+        height: 100px;
+        background-color: #90deb9;
+        background-image: linear-gradient(to bottom,#90deb9,#f1f1f1 );
+      }
+      
+    </style>
+      <div
+        id="colorchange"
+        style="
+          width: 100%;
+          color: #ffffff;
+          text-align: center;
+          border:solid 0px ; float:left; margin:0;display:inline">
+        <h1>我的简介很短 不过无所谓</h1>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: #f1f1f1;
+        text-align: center;
+        color: green;
+       line: height 200px;">
+      <h2>时间</h2>
+      <p>今天是<div id="datetime">
+    <script>
+        setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+    </script>
+</div><br>
+        我学习HTML的第<b>3</b>天</p>
+      <h2>今日进步</h2>
+      <p>渐变色和实时时间</p>
+      <p>合适的学习方法</p>
+      <h2>明日目标</h2>
+      <p><b>js</b></p>
+    </div>
+     <p style="text-align: center;">
+    <img
+      src="https://img.zcool.cn/community/013de65aaf7b8ca80121246d06d976.jpg@1280w_1l_2o_100sh.jpg"
+      alt="今日更新";
+      width="400px";
+      height="500px";
+    />
+  </p>
+    <br />
+  </body>
+</html>
