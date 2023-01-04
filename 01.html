@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #b1fde6, #c779d0, #feac5e);
+      }
+      .box {
+        height: 80vh;
+        width: 70%;
+        max-width: 600px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: justify;
+        color: #333;
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.034em;
+        font-family: "思源黑体";
+        overflow-y: scroll;
+      }
+      .box::-webkit-scrollbar {
+        display: none; /* Chrome
+    Safari */
+      }
+      .button-ensure {
+        background-color: dodgerblue;
+        color: white;
+        width: 300px;
+        height: 47px;
+        border: 0;
+        font-size: 16px;
+        border-radius: 30px;
+      }
+      .button-ensure:hover {
+        background-color: rgb(145, 202, 229);
+        color: white;
+        width: 300px;
+        height: 47px;
+        border: 0;
+        font-size: 16px;
+        border-radius: 30px;
+      }
+    </style>
+    <title>自主选课</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 style="text-align: center">按够1000</h1>
+      <p>即可选课</p>
+      <br /><br /><br />
+      <p style="text-align: right"></p>
+      <p style="text-align: right"></p>
+      <div align="center">
+        <button id="dzs" onclick="dianzan()" class="button-ensure">0</button>
+      </div>
+      <script>
+        function dianzan() {
+          let dianzanshubiaoqian = window.document.getElementById("dzs");
+          let dianzanshu = parseInt(dianzanshubiaoqian.innerText);
+          let xinshuzi = dianzanshu + 1;
+          dianzanshubiaoqian.innerText = xinshuzi;
+          return;
+        }
+      </script>
+    </div>
+  </body>
+</html>
